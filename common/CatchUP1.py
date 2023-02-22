@@ -9,7 +9,7 @@ def get_query(*args):
         value = float(event_list.get())
         sql_nc_bss_query.set(int(0.3048 * value * 10000.0 + 0.5)/10000.0)
     except ValueError:
-        errmsg.set("error message : "+event_env.get())
+        errmsg.set("Error Message : "+event_env.get())
         pass
 
 root = Tk()
